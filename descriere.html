@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviste Online</title>
+    <link rel="stylesheet" type="text/css" href="descriere.css">
+</head>
+<body>
+  <header>
+    <h1><a href="1index.html">Reviste Online</a></h1>
+  </header>
+
+  <main>
+    <h1>Descriere</h1>
+    <ul class="entitati">Rolurile:
+        
+        <li>Utilizator</li>
+        <li>Admin</li>
+    </ul>
+    <ul class="entitati">Entitati:
+        
+            <li>Users: Detalii despre utilizatori,nume, adresă de e-mail, parolă si rol(user sau admin)</li>
+        <br>
+            <li>Articole: Informații despre reviste sau articole, titlu, autor, gen, descriere, conținutul revistelor, care poate fi stocat într-un format specific, cum ar fi imagini sau fișiere pdf.</li>
+        <br>
+            <li>Categorii: O structură de categorii sau genuri pentru a organiza revistele și articolele.</li>
+        <br>
+            <li>Comentarii: Opinii și evaluări ale revistelor sau articolelor lăsate de utilizatori.</li>
+
+    </ul>
+    <ul class="entitati">Procesele specifice aplicatiei:
+        
+            <br><li>Căutare și Navigare: Procesul de căutare a revistelor sau a altor conținuturi, navigarea prin categorii și găsirea conținutului dorit.</li>
+            <br><li>Autentificare: Procesul de înregistrare, autentificare și autorizare a utilizatorilor pentru a accesa conținutul premium sau pentru a gestiona propriile lor reviste.</li>
+            <br><li>Citirea și Vizualizarea: Procesul de afișare și citire a revistelor sau a altor conținuturi, inclusiv funcționalități precum zoom, paginare și navigare rapidă.</li>
+            <br><li>Comentarii si Recenzii: Procesul de lăsare a evaluărilor și recenziilor de către utilizatori pentru reviste și alte conținuturi.</li>
+            <br><li>Analize și Statistici: Procesul de colectare a datelor pentru analize și rapoarte despre vizualizare a revistei.</li>
+    </ul>
+    <ul class="entitati">Relatii:
+        
+            <br><li>Utilizatorii (rol) pot crea "Comentarii" pentru "Articole".</li>
+            <br><li>Admini(rol) poate sterge "Comentarii" ale unor "Articole" si au drepturi de administrare, inclusiv moderarea conținutului și gestionarea utilizatorilor.</li>
+            <br><li>"Articole" pot fi încadrate în "Categorii".</li>
+            <br><li>Procesul de "Căutare și Navigare" implică accesul la date despre "Articole" și "Categorii".</li>
+            <br><li>Procesul de "Citirea și Vizualizarea" presupune afișarea conținutului din "Articole".</li>
+            <br><li>"Comentarii și Recenzii" sunt legate de "Comentarii" pentru a permite utilizatorilor să lase opinii.</li>
+            <br><li>Procesul de "Autentificare" utilizează datele din “Users" pentru a valida identitatea utilizatorilor.</li>
+    </ul>
+    <ul class="entitati">Componentele Principale:
+        
+            <br><li>Frontend: Interfața vizuală a aplicației, care permite utilizatorilor să interacționeze cu conținutul și funcționalitățile.</li>
+            <br><li>Backend: Logica aplicației și gestionarea bazei de date.</li>
+            <br><li>Baza de Date: Stocarea și gestionarea datelor utilizatorilor, articolelor, recenziilor, etc.</li>
+            <br><li>Servicii de Autentificare: Asigurarea autentificării și securității utilizatorilor.</li>
+            <br><li>Interfața de Administrare: O interfață specială pentru admini pentru gestionarea conținutului și a utilizatorilor.</li>
+    </ul>
+    <ul class="entitati">Descriere succintă a bazei de date:
+        <li>Tabelul Utilizatori: Cheie primară: ID_Utilizator, nume, adresă de e-mail, parolă, alte atribute relevante pentru detalii despre utilizatori</li>
+        <li>Tabelul Articole_Reviste: Cheie primară: ID_Articol_Revista, titlu, autor, gen, descriere, conținut</li>
+        <li>Tabelul Categorii_Genuri: Cheie primară: ID_Categorie_Gen, nume</li>
+        <li>Tabelul Recenzii_Evaluări: Cheie primară: ID_Recenzie_Evaluare, ID_Utilizator, ID_Articol_Revista, opinie</li>
+        <li>Tabelul Autentificare_Securitate: Cheie primară: ID_Autentificare_Securitate, ID_Utilizator, alte atribute legate de autentificare și securitate</li>
+        <li>Tabelul Statistici_Analize: Cheie primară: ID_Statistica_Analiza, ID_Utilizator, alte atribute relevante pentru statistică sau analiză</li>
+    </ul>
+    <div class="image-container">
+      <h2 class="image-title">Diagrama UML</h2>
+      <img src="./uml.png" alt="Imaginee">
+    </div>
+  </main>
+
+  <footer>
+    <p>Realizat de Avramescu Isaac</p>
+    <div><p>Not registered yet? <a href="registration.php">REGISTER HERE!</a></p></div>
+  </footer>
+</body>
+</html>

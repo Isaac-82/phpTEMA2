@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #000000e4;
+}
+header {
+    background-color: #4d309c;
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    margin-left: 5px;
+    align-items: auto;
+    justify-content: auto;
+    
+}
+
+.search-bar {
+    background: #000000;
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    padding: 2px;
+    border-radius: 10px;
+    
+}
+#select{
+    background-color: #8153ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+    width: 300px;
+    padding: 25px 20px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+}
+#select img{
+    width: 20px;
+    
+}
+#select ul{
+    position: absolute;
+    top: 110%;
+    left: 0;
+    list-style: none;
+    background-color: #8153ff;
+    color: #000000;
+    width: 100%;
+    border-radius: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    z-index: 1;
+}
+#select ul li{
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+.search-bar input{
+    padding: 10px 25px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #4d309c;
+    border-radius: 10px;
+
+}
+#select ul.open{
+    max-height: 400px;
+}
+
+.manhwa-container {
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 500px;
+    background-color: #2d2d2d;
+    padding-top: 10px;
+}
+.container-title{
+    color: #8153ff;
+    font-size: medium;
+    margin-left: 10px;
+}
+
+.separator-line {
+    height: 2px;
+    background-color: #a1a1a1;
+    margin: 10px 0;
+}
+
+.manhwa-item {
+    margin-bottom: 20px;
+}
+
+.manhwa-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.manhwa-image {
+    width: 200px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.manhwa-info {
+    color: #ffffff;
+}
+
+.manhwa-name {
+    margin-top: 20px;
+}
+
+.chapter-list {
+    padding: 10px;
+    color: #787878e4;
+}
+
+.chapter-list-item {
+    cursor: pointer;
+    padding: 5px 0;
+}

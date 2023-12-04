@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #000000e4;
+}
+header {
+    background-color: #4d309c;
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    margin-left: 5px;
+    align-items: auto;
+    justify-content: auto;
+    
+}
+
+.search-bar {
+    background: #000000;
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    padding: 2px;
+    border-radius: 10px;
+    
+}
+#select{
+    background-color: #8153ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+    width: 300px;
+    padding: 25px 20px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+}
+#select img{
+    width: 20px;
+    
+}
+#select ul{
+    position: absolute;
+    top: 110%;
+    left: 0;
+    list-style: none;
+    background-color: #8153ff;
+    color: #000000;
+    width: 100%;
+    border-radius: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    z-index: 1;
+}
+#select ul li{
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+.search-bar input{
+    padding: 10px 25px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: #4d309c;
+    border-radius: 10px;
+
+}
+#select ul.open{
+    max-height: auto;
+}
+
+.manhwa-details-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #2d2d2d;
+}
+
+.manhwa-details {
+    display: flex;
+    align-items: center;
+}
+
+.manhwa-details img {
+    width: 200px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.manhwa-info {
+    flex: 1;
+}
+
+.manhwa-info h2 {
+    color: #8153ff;
+    font-size: large;
+}
+
+.manhwa-info p {
+    margin-bottom: 10px;
+    color: antiquewhite;
+}
+
+.manhwa-info p a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(131, 0, 188)
+}
+
+.chapter-list-container {
+    margin-top: 20px;
+    color: antiquewhite;
+
+}
+
+.chapter-list {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.chapter-list li {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd; /* Add a separator between chapters */
+}
+
+.comment-box {
+    margin-top: 20px;
+    color: antiquewhite;
+    align-items: center;
+}
+
+.comment-box h3 {
+    margin-bottom: 10px;
+}
+
+.comment-box textarea {
+    border-radius: 10px;
+    width: 80%;
+    height: 80px;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin: 0 auto;
+    font-size: 20px;
+    display: block;
+    overflow: auto;
+    resize: none;
+}
+.comment-box textarea::-webkit-scrollbar {
+    width: 15px;
+}
+
+.comment-box textarea::-webkit-scrollbar-thumb {
+    background-color: #8153ff;
+    border-radius: 5px;
+}
+
+.comment-box textarea::-webkit-scrollbar-track {
+    background-color: #2d2d2d;
+}
+
+.comment-box button {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #8153ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
